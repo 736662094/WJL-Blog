@@ -1,4 +1,4 @@
-<style scoped>
+<style lang="scss" scoped>
     .index {
         width: 100%;
         position: absolute;
@@ -48,10 +48,11 @@
     export default {
         methods: {
             handleStart() {
-                this.$Modal.info({
-                    title: 'Bravo',
-                    content: 'Now, enjoy the convenience of iView.'
-                });
+                // this.$Modal.info({
+                //     title: 'Bravo',
+                //     content: 'Now, enjoy the convenience of iView.'
+                // });
+                this.$router.push('Home');
             }
         }
     };
